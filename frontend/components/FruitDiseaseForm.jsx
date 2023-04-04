@@ -25,7 +25,10 @@ const FruitDiseaseForm = () => {
     data.append("file", file.selectedFile);
 
     await axios
-      .post("http://127.0.0.1:5000/predict-fruit-disease",data)
+      .post(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/predict-fruit-disease`,
+        data
+      )
       .then(function (response) {
         console.log(response);
         // let newData = String(response.data.prediction);
@@ -94,9 +97,8 @@ const FruitDiseaseForm = () => {
             role="alert"
           >
             <span class="font-medium">Output:</span>
-           
-              <p>{output}</p>
-            
+
+            <p>{output}</p>
           </div>
         ) : (
           <div className="flex justify-center">

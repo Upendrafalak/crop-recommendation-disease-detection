@@ -88,16 +88,16 @@ export default function Footer() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/fertilizer">
+                      <Link href="/labs">
                         <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
-                          Fertilizer
+                          Soil Testing Labs
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/weather">
+                      <Link href="/news">
                         <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
-                          Weather
+                          Agricultural News
                         </a>
                       </Link>
                     </li>

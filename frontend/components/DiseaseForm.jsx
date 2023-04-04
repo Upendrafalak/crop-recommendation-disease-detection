@@ -27,7 +27,7 @@ const DiseaseForm = () => {
     data.append("file", file.selectedFile);
 
     await axios
-      .post("http://127.0.0.1:5000/disease-predict2", data)
+      .post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/disease-predict`, data)
       .then(function (response) {
         setIsDisabled(false);
         const formatted = response.data.how_to_use.split("\n");

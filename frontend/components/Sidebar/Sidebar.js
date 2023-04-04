@@ -47,10 +47,7 @@ export default function Sidebar() {
               className="w-16 h-16 object-cover rounded-full cursor-pointer mt-1"
             />
             <Link href="/" className="pt-2">
-              <a
-                className="text-blueGray-700 text-xl font-bold leading-relaxed inline-block mr-4 py-4 whitespace-nowrap uppercase "
-                href="/"
-              >
+              <a className="text-blueGray-700 text-xl font-bold leading-relaxed inline-block mr-4 py-4 whitespace-nowrap uppercase ">
                 Demeter
               </a>
             </Link>
@@ -76,10 +73,7 @@ export default function Sidebar() {
               <div className="flex flex-wrap">
                 <div className="w-6/12">
                   <Link href="/">
-                    <a
-                      href="/"
-                      className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
-                    >
+                    <a className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0">
                       DEMETER
                     </a>
                   </Link>
@@ -138,7 +132,7 @@ export default function Sidebar() {
                 </Link>
               </li>
 
-              {/* <li className="items-center">
+              <li className="items-center">
                 <Link href="/crop">
                   <a
                     className={
@@ -159,14 +153,14 @@ export default function Sidebar() {
                     Crop
                   </a>
                 </Link>
-              </li> */}
+              </li>
 
-              {/* <li className="items-center">
-                <Link href="/fertilizer">
+              <li className="items-center">
+                <Link href="/labs">
                   <a
                     className={
                       "text-sm uppercase py-3 font-bold block " +
-                      (router.pathname.indexOf("/fertilizer") !== -1
+                      (router.pathname.indexOf("/labs") !== -1
                         ? "text-lightBlue-500 hover:text-lightBlue-600"
                         : "text-blueGray-700 hover:text-blueGray-500")
                     }
@@ -174,46 +168,23 @@ export default function Sidebar() {
                     <i
                       className={
                         "fas fa-table mr-2 text-sm " +
-                        (router.pathname.indexOf("/fertilizer") !== -1
+                        (router.pathname.indexOf("/labs") !== -1
                           ? "opacity-75"
                           : "text-blueGray-300")
                       }
                     ></i>{" "}
-                    Fertilizer
+                    Soil Testing Labs
                   </a>
                 </Link>
               </li>
 
               <li className="items-center">
-                <Link href="/shop">
-                  <a
-                    className={
-                      "text-sm uppercase py-3 font-bold block " +
-                      (router.pathname.indexOf("/shop") !== -1
-                        ? "text-lightBlue-500 hover:text-lightBlue-600"
-                        : "text-blueGray-700 hover:text-blueGray-500")
-                    }
-                  >
-                    <i
-                      className={
-                        "fas fa-table mr-2 text-sm " +
-                        (router.pathname.indexOf("/shop") !== -1
-                          ? "opacity-75"
-                          : "text-blueGray-300")
-                      }
-                    ></i>{" "}
-                    Fertilizer Shop
-                  </a>
-                </Link>
-              </li>
-
-              <li className="items-center">
-                <Link href="/weather">
+                <Link href="/news">
                   <a
                     href="#pablo"
                     className={
                       "text-sm uppercase py-3 font-bold block " +
-                      (router.pathname.indexOf("/weather") !== -1
+                      (router.pathname.indexOf("/news") !== -1
                         ? "text-lightBlue-500 hover:text-lightBlue-600"
                         : "text-blueGray-700 hover:text-blueGray-500")
                     }
@@ -221,15 +192,16 @@ export default function Sidebar() {
                     <i
                       className={
                         "fas fa-map-marked mr-2 text-sm " +
-                        (router.pathname.indexOf("/weather") !== -1
+                        (router.pathname.indexOf("/news") !== -1
                           ? "opacity-75"
                           : "text-blueGray-300")
                       }
                     ></i>{" "}
-                    Weather
+                    News
                   </a>
                 </Link>
-              </li> */}
+              </li>
+
               {/* Divider */}
               <hr className="my-4 md:min-w-full" />
               <li className="flex items-center">

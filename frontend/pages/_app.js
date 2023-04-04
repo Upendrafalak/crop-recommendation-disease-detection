@@ -4,12 +4,13 @@ import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
 import { SessionProvider } from "next-auth/react";
+import Script from "next/script";
 
 import PageChange from "components/PageChange/PageChange.js";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import "styles/globals.css";
 import "styles/tailwind.css";
-// import "styles/globals.css";
 
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
@@ -33,7 +34,7 @@ export default class MyApp extends App {
     let comment = document.createComment(`
 
 =========================================================
-* Notus NextJS - v1.1.0 based on Tailwind Starter Kit by Creative Tim
+* Demeter - v1.1.0 based on Tailwind Starter Kit by Creative Tim
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/notus-nextjs
@@ -72,7 +73,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>Notus NextJS by Creative Tim</title>
+          <title>Demeter</title>
           <script
             src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
             async
@@ -83,6 +84,17 @@ export default class MyApp extends App {
             <Component {...pageProps} />
           </SessionProvider>
         </Layout>
+        <Script
+          strategy="lazyOnload"
+          src="https://www.googletagmanager.com/gtag/js?id=G-91P5XE763C"
+        />
+        <Script id="analytics" strategy="lazyOnload">
+          {`window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-91P5XE763C');`}
+        </Script>
       </React.Fragment>
     );
   }

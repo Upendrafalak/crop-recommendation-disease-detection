@@ -27,7 +27,7 @@ const WeatherForm = () => {
     console.log(formData);
 
     await axios
-      .post("http://127.0.0.1:5000/weather-predict", {
+      .post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/weather-predict`, {
         tempr: Number(formData.tempr),
         air_pressure: Number(formData.air_pressure),
         wind_speed: Number(formData.wind_speed),

@@ -29,7 +29,7 @@ const PredictionForm = () => {
     console.log(formData);
 
     await axios
-      .post("http://127.0.0.1:5000/forecast", {
+      .post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/forecast`, {
         location: formData.location,
       })
       .then(function (response) {

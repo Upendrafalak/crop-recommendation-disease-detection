@@ -88,14 +88,30 @@ export default function Navbar(props) {
                   </a>
                 </Link>
               </li>
-              {/* <li className="flex items-center">
+              <li className="flex items-center">
                 <Link href="/crop">
                   <a className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold">
                     Crop
+                    {/* <span className="lg:hidden inline-block ml-2">Share</span> */}
                   </a>
                 </Link>
-              </li> */}
-
+              </li>
+              <li className="flex items-center">
+                <Link href="/labs">
+                  <a className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold">
+                    Labs
+                    {/* <span className="lg:hidden inline-block ml-2">Share</span> */}
+                  </a>
+                </Link>
+              </li>
+              <li className="flex items-center">
+                <Link href="/news">
+                  <a className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold">
+                    News
+                    {/* <span className="lg:hidden inline-block ml-2">Share</span> */}
+                  </a>
+                </Link>
+              </li>
               <li className="flex items-center h-12">
                 <div
                   className="px-3 text-xs uppercase flex flex-row pb-1 font-bold"

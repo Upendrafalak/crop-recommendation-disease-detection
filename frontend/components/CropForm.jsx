@@ -32,7 +32,7 @@ const CropForm = () => {
     let data = null;
 
     await axios
-      .post("http://127.0.0.1:5000/crop-predict", {
+      .post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/crop-predict`, {
         N: Number(formData.N),
         P: Number(formData.P),
         K: Number(formData.K),

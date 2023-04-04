@@ -43,7 +43,7 @@ export default function Index() {
         </div>
         <img
           className="absolute top-0 b-auto right-0 pt-12 sm:w-6/12 -mt-16 sm:mt-0 w-100 max-h-860-px"
-          src="/img/pattern_nextjs.png"
+          src="/img/homelogo.png"
           alt="..."
         />
       </section>
@@ -170,7 +170,7 @@ export default function Index() {
                     </div>
                   </div>
                 </div>
-                {/* <div className="w-full md:w-6/12 px-4">
+                <div className="w-full md:w-6/12 px-4">
                   <div className="relative flex flex-col min-w-0 mt-4">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-blueGray-500 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white">
@@ -190,12 +190,12 @@ export default function Index() {
                         </svg>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
-                        Fertilizer Recommendation
+                        Soil Testing Labs Locator
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                        The amount of fertilizers added to soil during the
-                        period of cultivation can greatly affect the soil pH and
-                        nutrients. Know the right amount from Demeter.
+                        The soil testing labs locator feature is a tool that
+                        allows users to search for and find soil testing labs in
+                        their area and get their soil samples tested.
                       </p>
                     </div>
                   </div>
@@ -218,15 +218,16 @@ export default function Index() {
                         </svg>
                       </div>
                       <h6 className="text-xl mb-1 font-semibold">
-                        Weather Prediction
+                        Agricultural News
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                        Weather plays an important role in Agriculture. Know the
-                        weather with predictions from Demeter.
+                        Stay up-to-date with the latest agricultural news and
+                        trends, including crop prices, weather forecasts, and
+                        technology advancements, all in one convenient app
                       </p>
                     </div>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -296,7 +297,7 @@ export default function Index() {
             </div>
           </div>
 
-          {/* <div className="flex flex-wrap items-center pt-32">
+          <div className="flex flex-wrap items-center pt-32">
             <div className="w-96 md:w-5/12 px-4 mr-auto ml-auto mt-32">
               <Image
                 src="https://res.cloudinary.com/sarveshp46/image/upload/v1674139877/farming-assistant/fertilizer_llvrpm.jpg"
@@ -323,12 +324,12 @@ export default function Index() {
                 </svg>
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                Fertilizer Recommendation
+                Soil Testing Labs Locator
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                The amount of fertilizers added to soil during the period of
-                cultivation can greatly affect the soil pH and nutrients. Know
-                the right amount from Demeter.
+                TThe soil testing labs locator feature is a tool that allows
+                users to search for and find soil testing labs in their area and
+                get their soil samples tested.
               </p>
               <div className="block pb-6">
                 <span className="text-xs font-semibold inline-block py-1 px-2  rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
@@ -357,7 +358,7 @@ export default function Index() {
                 </a>
               </Link>
             </div>
-          </div> */}
+          </div>
 
           <div className="flex flex-wrap items-center">
             <div className="w-full md:w-4/12 px-12 md:px-4 ml-auto mr-auto mt-48">
@@ -422,7 +423,7 @@ export default function Index() {
             </div>
           </div>
 
-          {/* <div className="flex flex-wrap items-center pt-32">
+          <div className="flex flex-wrap items-center pt-32">
             <div className="w-96 md:w-5/12 px-4 mr-auto ml-auto mt-32">
               <Image
                 src="https://res.cloudinary.com/sarveshp46/image/upload/v1674140484/farming-assistant/x_0_0_0_14119699_800_1_l032tn.jpg"
@@ -449,11 +450,12 @@ export default function Index() {
                 </svg>
               </div>
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                Weather Prediction
+                Agricultural News
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-                Weather plays an important role in Agriculture. Know the weather
-                with predictions from Demeter.
+                Stay up-to-date with the latest agricultural news and trends,
+                including crop prices, weather forecasts, and technology
+                advancements, all in one convenient app
               </p>
               <div className="block pb-6">
                 <span className="text-xs font-semibold inline-block py-1 px-2  rounded-full text-blueGray-500 bg-white uppercase last:mr-0 mr-2 mt-2">
@@ -482,7 +484,7 @@ export default function Index() {
                 </a>
               </Link>
             </div>
-          </div> */}
+          </div>
         </div>
       </section>
 
@@ -535,7 +537,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      {/* <ChatBot /> */}
+      <ChatBot />
       <Footer />
     </Layout>
   );
