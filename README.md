@@ -1,4 +1,4 @@
-# Farming Assistant
+# Crop Recommendation and Disease Detection
 
 ## Demo Video
 
